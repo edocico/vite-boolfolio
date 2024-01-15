@@ -1,15 +1,15 @@
 <script>
+import ProjectIndex from "./pages/projects/index.vue";
+
 export default {
-  data() {
-    return {
-      projects: [],
-    };
+  components: {
+    ProjectIndex,
   },
 };
 </script>
 
 <template>
-  <div>hello world!</div>
+  <ProjectIndex />
 </template>
 
 <style lang="scss">
