@@ -9,20 +9,37 @@ export default {
 <template>
   <section class="header">
     <div class="container">
-      <div>home</div>
-      <div>portfolio</div>
-      <div>contatti</div>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <router-link :to="{ name: 'home' }"> Home </router-link>
+          </li>
+          <li>
+            <RouterLink :to="{ name: 'projects.index' }">Progetti</RouterLink>
+          </li>
+          <li>Contatti</li>
+        </ul>
+      </nav>
     </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
 .container {
-  display: grid;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
-  gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
+  padding: 20px 0px;
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
 }
 </style>
