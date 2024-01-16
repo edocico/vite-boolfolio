@@ -17,7 +17,9 @@ export default {
           <li>
             <RouterLink :to="{ name: 'projects.index' }">Progetti</RouterLink>
           </li>
-          <li>Contatti</li>
+          <li>
+            <RouterLink :to="{ name: 'AppContacts' }">Contatti</RouterLink>
+          </li>
         </ul>
       </nav>
     </div>
