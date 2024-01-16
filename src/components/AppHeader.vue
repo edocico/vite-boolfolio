@@ -44,4 +44,8 @@ export default {
     }
   }
 }
+
+.header {
+  border-bottom: 1px solid black;
+}
 </style>
