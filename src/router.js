@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import AppHome from "./pages/AppHome.vue";
 import ProjectsIndex from "./pages/projects/index.vue";
 import ContactsPage from "./components/ContactsPage.vue";
+import ProjectShow from "./pages/projects/show.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -21,6 +22,12 @@ const router = createRouter({
       path: "/contacts",
       name: "AppContacts",
       component: ContactsPage,
+    },
+    {
+      path: "/project/:id",
+      name: "project.show",
+      props: true,
+      component: ProjectShow,
     },
   ],
 });

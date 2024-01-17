@@ -48,6 +48,7 @@ export default {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .container-title {

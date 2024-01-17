@@ -14,7 +14,7 @@ export default {
       <h1>{{ title }}</h1>
     </div>
     <div class="container">
-      <form action="">
+      <form action="" method="POST">
         <input class="name" type="text" placeholder="Nome" name="name" />
         <input
           class="email"
